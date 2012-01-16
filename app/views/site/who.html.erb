@@ -1,0 +1,153 @@
+<style type="text/css" media="screen">
+  #slidermain{
+  	height:808px; 	/*this changes the height of the image slider*/
+  	width:1020px;
+  	background-image:url(<%= asset_path 'back_int.png' %>);
+  	background-repeat:no-repeat;
+  }
+  .aviaslider{
+  	height:776px; 	/*this changes the height of the image slider*/
+  }
+
+  #contentover {
+  	width:900px;
+  	padding: 25px;
+  	z-index:9;
+  	position:absolute;
+  	color:#FFF;
+  	margin-left: 30px;
+  	margin-top: 120px;
+  	text-align:justify;
+  }
+
+  .titles {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:26px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  .titles_smaller {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:22px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  #teamback{
+  	background-color: #b5e2ec;
+  	padding:20px;
+  	color:#404647;
+  	line-height:16px;
+  	font-size:12px;
+  	margin-left:-30px;
+  	margin-top:-20px;
+  	z-index:90;
+  }
+  #navi {
+  	padding: 10px;
+  }
+  #navi:hover {
+  	background-color: #1C8DA4;
+  	padding: 10px;
+  }#menu_items {
+  	z-index: 100;
+  	position:relative;
+  }
+  #next_page {
+  	position: absolute;
+  	z-index:10;
+  	margin-left: 60px;
+  	margin-top: 720px;
+  	color:#de791d;
+  }
+  #next_page a {
+  	color:#de791d;
+  	text-decoration:none;
+  }
+
+  #next_page a:hover {
+  	color:#89bfc8;
+  	text-decoration:none;
+  }
+</style>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+	jcps.fader(300, '#switcher-panel');
+});
+</script>
+
+<%= stylesheet_link_tag "site/who" %>
+<%= stylesheet_link_tag "jquery.content-panel-switcher" %>
+<div id="slidermain">
+  <div id="slidepanels">
+    <div id="contentover">
+      <p><span class="titles">Here's our story in a nutshell. Questis is a registered investment advisory firm founded on a common belief of how markets work and how people should invest for the long-term.</span> The fact that a team of people with completely different backgrounds have adopted one investment philosophy is a testament in itself, but the unshakable logic and compelling evidence supporting the Questis investment concepts are readily available to the public through years of academic research papers, dozens of books, and the wisdom of Nobel Prize winners.  Unfortunately, herein lies one of the problems with successful investing – who's going to read these publications?  They're long, technical, and at times quite boring.  This is why, our goal as a firm is to teach these important ideas in a way every investor can understand them.  It's much simpler than you think.</p><br><br>
+      <span class="titles_smaller"> The Questis Team:</span>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="200" align="left" valign="top"><div id="menu_items">
+            <table width="200" border="0" cellspacing="4" cellpadding="4">
+              <tr>
+                <td align="left" valign="top"><a id="steve" class="switcher"><div id="navi">Steve Wilbourne</div></a></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"><a id="john" class="switcher">
+                  <div id="navi">John Tabb</div></a></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top"><a id="josh" class="switcher">
+                    <div id="navi">Josh Hartley</div></a></td>
+                  </tr>
+                </table>
+              </div>
+              <p><br />
+              </p></td>
+              <td valign="top"><div id="switcher-panel"></div>
+
+                <!-- Steve -->
+                <div id="steve-content" class="switcher-content">
+                  <div id="teamback">
+                    <table width="100%" border="0" cellspacing="10" cellpadding="10" style="border:2px solid #028da6;">
+                      <tr>
+                        <td align="left" valign="top">After moving to Charleston in the mid-90's, Steve, like many advisors started by brokering investment and insurance products.  He quickly learned the errors of ways and jumped ship to become junior partner in an independent, specialty investment firm that grew to actively manage more than $400 million in portfolio assets for dental professionals.  After nearly 10 years in the industry and seeing an opportunity to do things better for his clients, Steve founded Questis in 2004.  The mission – to educate investors on the reality of investing, how capital markets work, and shine a light on how brokers and brokerage firms operate.  Steve is a graduate of Bowling Green, the university in Ohio, not the town in Kentucky, where he majored in finance and economics, while playing four years of football.  He's married to Patti Floyd of Kingstree fame, not fortune, and they have three beautiful girls – Annie Kirven (7), Lila Grace (5), and Mary Mackenzie (< 1).  Whenever possible, Steve and his family enjoy the best that Charleston has to offer – the food, the fun, and the sun.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- John -->                  
+                <div id="john-content" class="switcher-content">
+                  <div id="teamback">
+                    <table width="100%" border="0" cellspacing="10" cellpadding="10" style="border:2px solid #028da6;">
+                      <tr>
+                        <td align="left" valign="top">John, a CERTIFIED FINANCIAL PLANNER™ and ACCREDITED INVESTMENT FIDUCIARY®, cut his teeth at Merrill Lynch, learning the intimate details of the wire-house world, and thus recognizing the pros and cons of working with a Wall Street behemoth. After a chance meeting, Steve and John, two guys with completely different backgrounds agreed on one common philosophy, and a program for teaching these important investment concepts in a way every investor can understand them.  Prior to working with private clients and businesses in the financial services industry, John, a native of Virginia, graduated with honors from Virginia Tech's business program.  He loved the maroon and burnt orange so much that he married a fellow Hokie, Jessica Clem, and continues to support the Hokie nation by serving on boards for both the Charleston Chapter of the Virginia Tech Alumni Association and his fraternity, Phi Gamma Delta.  Outside of Questis, John's a member of the Charleston Ocean Racing Association and Saint Andrews Rotary, and he and Jess reside in West Ashley with their pound dog Gabby (3 or 21 in dog years).</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+
+                <!-- Josh -->                  
+                <div id="josh-content" class="switcher-content">
+                  <div id="teamback">
+                    <table width="100%" border="0" cellspacing="10" cellpadding="10" style="border:2px solid #028da6;">
+                      <tr>
+                        <td align="left" valign="top">Seeking a change of scenery, Josh joined Questis, from the capital equipment industry, with more than 20 years of business-to-business sales and marketing experience.  His focus is to educate small business owners and their employees on guarding against 401(k) pitfalls like biased advice, and opaque fees, while simultaneously assisting them with navigating the opportunities of implementing fiduciary-managed, less expensive 401(k) solutions that mitigate business owner risks, reduce administrative headaches, and increase long-term retirement income.  Josh, originally from New England, and a graduate of U Mass in economics, migrated south to Charleston in 2006 with his wife, Cheryl Farmer, and their two kids Cole (13) and Tess (9).  Affectionately known by some, as the Mayor of Hobcaw, Josh and his family reside in Mt. Pleasant where his pursuits include coaching his two children and their friends in youth sports, taking full advantage of Charleston's outside activities, and enjoying his Boston-based sports franchises (Bruins, Celtics, Patriots, and Sox).  Without a doubt, Josh is most comfortable surrounding himself with his family and friends.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+
+              </td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+        </div>
+        <div id="next_page"><a href="you_decide.php">NEXT > You Must Decide </a></div>
+
+        <ul class='aviaslider' id="fullwidth-fade-slider">
+          <li><img src="assets/who.jpg" alt="registered investment advisory questis certified financial planner" /></li>
+        </ul>
+      </div>
+    </div>

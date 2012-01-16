@@ -1,0 +1,110 @@
+<style type="text/css" media="screen">
+  #slidermain{
+  	height:808px; 	/*this changes the height of the image slider*/
+  	width:1020px;
+  	background-image:url(<%= asset_path 'back_int.png' %>);
+  }
+  .aviaslider{
+  	height:776px; 	/*this changes the height of the image slider*/
+  }
+
+  #contentover {
+  	width:475px;
+  	padding: 25px;
+  	z-index:9;
+  	position:absolute;
+  	color:#FFF;
+  	margin-left: 40px;
+  	margin-top: 320px;
+  	text-align:justify;
+  }
+
+  #contentover a {
+  		color:#e18836;
+  		text-decoration:none;
+  }
+  #contentover a:hover {
+  	color:#798e94;
+  		text-decoration:none;
+  }
+  .titles {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:26px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  .titles_smaller {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:22px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  #teamback{
+  	background-color: #b5e2ec;
+  	padding:20px;
+  	color:#404647;
+  	line-height:16px;
+  	font-size:12px;
+  	margin-left:-30px;
+  	margin-top:-20px;
+  	z-index:90;
+  }
+  #navi {
+  	padding: 10px;
+  }
+  #navi:hover {
+  	background-color: #1C8DA4;
+  	padding: 10px;
+  }#menu_items {
+  	z-index: 100;
+  	position:relative;
+  }
+  #next_page {
+  	position: absolute;
+  	z-index:10;
+  	margin-left: 60px;
+  	margin-top: 720px;
+  	color:#de791d;
+  }
+  #next_page a {
+  	color:#de791d;
+  	text-decoration:none;
+  }
+
+  #next_page a:hover {
+  	color:#89bfc8;
+  	text-decoration:none;
+  }
+  .contact {
+  	color:#798e94;
+  	font-size:21px;
+  	line-height:35px;
+  	font-weight:bold;
+  	letter-spacing:-1px;
+  }
+  .contact_orange {
+  	color:#e18836;
+  	font-size:21px;
+  	line-height:35px;
+  	font-weight:bold;
+  	letter-spacing:-1px;
+  }
+</style>
+
+<%= stylesheet_link_tag "site/style_why" %>
+<div id="slidermain">
+  <div id="slidepanels">
+    <div id="contentover">
+      <p><span class="titles">Simply put, we want to change the way hard-working people think about investing by giving them the knowledge necessary to be financially responsible. </span>Questis doesn't sell a product, we equip our clients so they can acquire enough net worth to take care of themselves and their families, live comfortably and prosperously into old age, and give generously to others.  Questis offers a highly focused, fee-only investment and wealth management process.  We have no conflict of interest in any brokerage firm, investment or insurance company, or third-party professional service provider. The business of Questis is to help our clients make intelligent, informed decisions about their money and our only source of revenue is fees paid directly by our clients for that advice.  We are committed to doing what's best for our clients, which includes open and prompt communication to questions and inquiries, ongoing independence, complete objectivity, operational transparency, and lower costs.<br><br>
+
+      </p><p>&nbsp;</p>
+    </div>
+    <div id="next_page"><%= link_to "NEXT > Who is Questis", who_path %></div>
+
+    <ul class='aviaslider' id="fullwidth-fade-slider">
+      <li><img src="assets/why.jpg" alt="" /></li>
+    </ul>
+  </div>
+
+
+</div>

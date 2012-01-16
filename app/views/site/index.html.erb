@@ -1,0 +1,48 @@
+<div id="slidermain">
+  <div id="slidepanels">
+    <ul class='aviaslider' id="fullwidth-fade-slider">
+      <% 4.times do |i| %>
+      <li><%= link_to image_tag("slides/#{i+1}.png", :alt => ""), get_started_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div id="maincontent"><table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="288" align="left" valign="top">  <div id="promo">
+      <div class="fadepromo"> <a href="Brochure.pdf" target="_blank"><img src="assets/promo1.jpg" border="0" /></a>
+        <div>
+          <a href="Brochure.pdf" target="_blank"> <img src="assets/promo1_over.jpg"  border="0"/></a>
+        </div>
+      </div>
+    </div></td>
+    <td width="35">&nbsp;</td>
+    <td width="288" align="left" valign="top"><div id="promo">
+      <div class="fadepromo2"> <a href="https://www.facebook.com/myquestis" target="_blank"><img src="assets/promo2.jpg" border="0" /></a>
+        <div> <a href="https://www.facebook.com/myquestis" target="_blank"> <img src="assets/promo2_over.jpg"  border="0"/></a> </div>
+      </div>
+    </div></td>
+    <td width="35">&nbsp;</td>
+    <td width="288" align="left" valign="top"><div id="promo">
+      <div class="fadepromo3"> <img src="assets/promo3_new.jpg" border="0"/>
+        <div> <img src="assets/promo3_over_new.jpg"  border="0" usemap="#Map2" /></div>
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+    <td height="35">&nbsp;</td>
+  </tr>
+</table>
+</div>

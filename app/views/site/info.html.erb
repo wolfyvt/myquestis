@@ -1,0 +1,5 @@
+<ul>
+<% [:shane, :adam, :turbo, :riley].each do |name| %>
+  <%= render :partial => 'people', :locals => {:person_name => name} %>
+<% end %>
+</ul>

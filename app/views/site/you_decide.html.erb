@@ -1,0 +1,170 @@
+<style type="text/css" media="screen">
+  #slidermain{
+  	height:808px; 	/*this changes the height of the image slider*/
+  	width:1020px;
+  	margin-left:auto;
+  	margin-right:auto;
+  	background-image:url(<%= asset_path 'back_int.png' %>);
+  	background-repeat:no-repeat;
+  	z-index:9999;
+  }
+  .aviaslider{
+  	height:776px; 	/*this changes the height of the image slider*/
+  	width:951px;
+  	overflow: hidden;
+  	position: relative;
+  }
+
+  #contentover {
+  	width:430px;
+  	padding: 25px;
+  	z-index:9;
+  	position:absolute;
+  	color:#FFF;
+  	margin-right:0px;
+  	margin-left:488px;
+  	margin-top: 13px;
+  	text-align:justify;
+  	line-height:19px;
+  }
+  .titles_large {
+  		  font-family: 'BebasNeueRegular';
+  			font-size:30px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  			color:#FFF;
+  }
+  .titles_large a {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:30px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  			color:#DE791D;
+  			text-decoration:none;
+  }
+  .titles_large  a:hover{
+  		  font-family: 'BebasNeueRegular';
+  			font-size:30px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  			color: #93ADB5;
+  			text-decoration:none;
+  }
+  .titles {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:26px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  			color:#FFF;
+  }
+  .titles_smaller {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:22px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  #teamback{
+  	background-color: #b5e2ec;
+  	padding:20px;
+  	color:#404647;
+  	line-height:16px;
+  	font-size:12px;
+  	margin-left:-30px;
+  	margin-top:-20px;
+  	z-index:90;
+  }
+  #navi {
+  	padding: 10px;
+  }
+  #navi:hover {
+  	background-color: #1C8DA4;
+  	padding: 10px;
+  }
+  #menu_items {
+  	z-index: 100;
+  	position:relative;
+  }
+  #next_page {
+  	color:#de791d;
+  }
+  #next_page a {
+  	color:#FFF;
+  	text-decoration:none;
+  }
+
+  #next_page a:hover {
+  	color:#89bfc8;
+  	text-decoration:none;
+  }
+</style>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+
+  	/* This is basic - uses default settings */
+
+  	$("a#single_image").fancybox();
+
+  	/* Using custom settings */
+
+  	$("a#inline").fancybox({
+  		'hideOnContentClick': true
+  	});
+
+  	/* Apply fancybox to multiple items */
+
+  	$("a.group").fancybox({
+  		'transitionIn'	:	'elastic',
+  		'transitionOut'	:	'elastic',
+  		'speedIn'		:	600, 
+  		'speedOut'		:	200, 
+  		'overlayShow'	:	false
+  	});
+
+  });
+</script>
+
+<%= stylesheet_link_tag "site/style_decide", "jquery.fancybox-1.3.4" %>
+
+
+<div id="slidermain">
+  <div id="slidepanels">
+    <div id="contentover">
+      <p><span class="titles">Regardless if you're saving for retirement, a child's college education, or a vacation home, the need to invest wisely is more important now than ever before.</span> The truth is most investors aren't wise.  They believe the self-serving hype of the financial media.  They waste countless hours searching for a crystal ball in the form of financial information.  Or they do nothing, sticking their heads in the sand and hoping for the best.  For a majority of investors, Wall Street has become Vegas – unnecessarily risky, everything looks the same, and it cost too much.  Questis knows that it doesn't have to be this way.  If you're willing to become a patient and disciplined investor with a long-term horizon, the financial markets can become your ally rather than your adversary.  All you have to do is make the decision to flip the odds in your favor and to capitalize on a successful investor experience – no speculation, fear, or regret.  Would you like to learn more?
+        </p>
+        <br>
+        <br><br>
+        <span class="titles_large"> 
+          <a id="inline" href="#data1">Average Investor vs. Markets</a>
+
+          <div style="display:none"><div id="data1"><%= image_tag "decide_1.jpg" %></div></div><br><br>
+        </span>
+        <span class="titles_large"> 
+          <a id="inline" href="#data2">Emotional Cycle of Investing</a>
+
+          <div style="display:none"><div id="data2"><%= image_tag "decide_2.jpg" %></div></div><br><br>
+        </span>
+        <span class="titles_large">
+          <a id="inline" href="#data3">Behavioral Inclinations of an Investor</a>
+
+          <div style="display:none"><div id="data3"><%= image_tag "decide_3.jpg" %></div></div><br><br>
+        </span>
+        <span class="titles_large">
+          <a id="inline" href="#data4">Advice Bifurcated</a>
+
+          <div style="display:none"><div id="data4"><%= image_tag "decide_4.jpg" %></div></div><br><br>
+        </span>
+        <span class="titles_large">
+          <a id="inline" href="#data5">Which Advisor Model Is Best For You?</a>
+
+          <div style="display:none"><div id="data5"><%= image_tag "decide_5.jpg" %></div></div><br><br>
+        </span>
+        <br><br>
+
+        <div id="next_page"><a href="talk.php"><strong>NEXT > Let's Just Talk</strong></a></div>
+      </div>
+      <ul class='aviaslider' id="fullwidth-fade-slider">
+        <li><img src="assets/decide.jpg" alt="must decide to invest wisely" /></li>
+      </ul>
+    </div>
+  </div>

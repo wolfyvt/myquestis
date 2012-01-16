@@ -1,0 +1,82 @@
+<style type="text/css" media="screen">
+  #slidermain{
+  	height:808px;
+  	background-image:url(<%= asset_path 'back_int.png' %>);
+  }
+  .aviaslider{
+  	height:776px; 	/*this changes the height of the image slider*/
+
+  }
+
+
+  #contentover {
+  	width:340px;
+  	padding: 25px;
+  	z-index:9;
+  	position:absolute;
+  	color:#000000;
+  	margin-right:0px;
+  	margin-left:578px;
+  	margin-top: 13px;
+  	text-align:justify;
+  	line-height:19px;
+  }
+
+  .titles {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:26px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  			color:#028da6;
+  }
+  .titles_smaller {
+  		    font-family: 'BebasNeueRegular';
+  			font-size:22px;
+  			text-transform:uppercase;
+  			letter-spacing:1px;
+  }
+  #teamback{
+  	background-color: #b5e2ec;
+  	padding:20px;
+  	color:#404647;
+  	line-height:16px;
+  	font-size:12px;
+  	margin-left:-30px;
+  	margin-top:-20px;
+  	z-index:90;
+  }
+  #navi {
+  	padding: 10px;
+  }
+  #navi:hover {
+  	background-color: #1C8DA4;
+  	padding: 10px;
+  }
+  #menu_items {
+  	z-index: 100;
+  	position:relative;
+  }
+  #next_page {
+  	color:#de791d;
+  }
+  #next_page a {
+  	color:#de791d;
+  	text-decoration:none;
+  }
+
+  #next_page a:hover {
+  	color:#89bfc8;
+  	text-decoration:none;
+  }
+</style>
+
+<div id="slidermain">
+  <div id="slidepanels">
+    <div id="contentover"><span class="titles">WELCOME TO QUESTIS. We're pleased you discovered us.</span> Before you explore our website, there's a simple belief we want you to embrace – investors are highly unlikely to stumble into great financial success – you must take control of your investment future.  Ironically, successful people come to us proficient at making money.  But when it comes to managing their retirement nest egg or their household finances, things are quite different.  Often times, they get caught up in the day-to-day necessities of living today, with no clear direction of tomorrow, and quickly become victims of a complex financial services industry that is skillful at shifting wealth from main street to Wall Street.  Not on our watch.  Investors need a deliberate, focused approach to forging a highly effective and efficient strategy that serves their family well and provides them with a lifestyle they deserve. <strong>Look no further; there is a better solution.</strong><br><br>
+      <div id="next_page"><%= link_to "NEXT > Why Questis", why_path %></div>
+    </div>
+    <ul class='aviaslider' id="fullwidth-fade-slider">
+      <li><img src="assets/get_started.jpg" alt="" /></li>
+    </ul>
+  </div>
+</div>

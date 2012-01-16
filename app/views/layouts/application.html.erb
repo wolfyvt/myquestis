@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myquestis</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+  <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){ 
+          $("ul.sf-menu").superfish({ 
+              pathClass:  'current' 
+          }); 
+      }); 
+
+  </script>
+   <script type="text/javascript">
+      <!--
+
+      $(function () {
+          // find the div.fade elements and hook the hover event
+          $('div.fade').hover(function() {
+              // on hovering over find the element we want to fade *up*
+              var fade = $('> div', this);
+
+              // if the element is currently being animated (to fadeOut)...
+              if (fade.is(':animated')) {
+                  // ...stop the current animation, and fade it to 1 from current position
+                  fade.stop().fadeTo(250, 1);
+              } else {
+                  fade.fadeIn(250);
+              }
+          }, function () {
+              var fade = $('> div', this);
+              if (fade.is(':animated')) {
+                  fade.stop().fadeTo(250, 0);
+              } else {
+                  fade.fadeOut(250);
+              }
+          });
+      });
+
+      //-->
+      </script>
+       <script type="text/javascript">
+      <!--
+
+      $(function () {
+          // find the div.fade elements and hook the hover event
+          $('div.fadepromo').hover(function() {
+              // on hovering over find the element we want to fade *up*
+              var fadepromo = $('> div', this);
+
+              // if the element is currently being animated (to fadeOut)...
+              if (fadepromo.is(':animated')) {
+                  // ...stop the current animation, and fade it to 1 from current position
+                  fadepromo.stop().fadeTo(250, 1);
+              } else {
+                  fadepromo.fadeIn(250);
+              }
+          }, function () {
+              var fadepromo = $('> div', this);
+              if (fadepromo.is(':animated')) {
+                  fadepromo.stop().fadeTo(250, 0);
+              } else {
+                  fadepromo.fadeOut(250);
+              }
+          });
+      });
+
+      //-->
+      </script>
+        <script type="text/javascript">
+      <!--
+
+      $(function () {
+          // find the div.fade elements and hook the hover event
+          $('div.fadepromo2').hover(function() {
+              // on hovering over find the element we want to fade *up*
+              var fadepromo2 = $('> div', this);
+
+              // if the element is currently being animated (to fadeOut)...
+              if (fadepromo2.is(':animated')) {
+                  // ...stop the current animation, and fade it to 1 from current position
+                  fadepromo2.stop().fadeTo(250, 1);
+              } else {
+                  fadepromo2.fadeIn(250);
+              }
+          }, function () {
+              var fadepromo2 = $('> div', this);
+              if (fadepromo2.is(':animated')) {
+                  fadepromo2.stop().fadeTo(250, 0);
+              } else {
+                  fadepromo2.fadeOut(250);
+              }
+          });
+      });
+
+      //-->
+      </script>
+        <script type="text/javascript">
+      <!--
+
+      $(function () {
+          // find the div.fade elements and hook the hover event
+          $('div.fadepromo3').hover(function() {
+              // on hovering over find the element we want to fade *up*
+              var fadepromo3 = $('> div', this);
+
+              // if the element is currently being animated (to fadeOut)...
+              if (fadepromo3.is(':animated')) {
+                  // ...stop the current animation, and fade it to 1 from current position
+                  fadepromo3.stop().fadeTo(250, 1);
+              } else {
+                  fadepromo3.fadeIn(250);
+              }
+          }, function () {
+              var fadepromo3 = $('> div', this);
+              if (fadepromo3.is(':animated')) {
+                  fadepromo3.stop().fadeTo(250, 0);
+              } else {
+                  fadepromo3.fadeOut(250);
+              }
+          });
+      });
+
+      //-->
+      </script>
+</head>
+<body id='top'>
+
+<div id="headertop">
+  <div id="socialwrapper">
+    <div id="social">
+      <table border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top"><img src="assets/social.png" width="75" height="27" border="0" usemap="#Map"></td>
+          <td valign="middle"><a href="mailto:info@myquestis.com">info@myquestis.com</a> | 843.367.1320 | <a href="contact.php"><strong>CONTACT US</strong></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class='wrapper_fullwidth'>
+    
+    <div class="center"> <%=   %><a href="index.php"><img src="assets/logo.png" width="124" height="33" border="0" style="padding-left:25px; float: left; padding-right:35px; padding-top:12px;"></a>
+      <ul class="sf-menu">
+        <li style=" background-image:url(assets/active.jpg); background-position:bottom bottom; background-repeat:repeat-x;">
+          <%= link_to "Welcome To Questis", root_path %>
+          <ul>
+            <li>
+              <%= link_to "Get Started", get_started_path %>
+            </li>
+            <li>
+              <%= link_to "Why Questis", why_path %>
+            </li>
+            
+            <li>
+              <%= link_to "Who is Questis", who_path %>
+            </li>
+            
+            <li>
+              <%= link_to "You Must Decide", you_decide_path %>
+            </li>
+            </ul>
+          </li>
+        <li>
+          <a href="talk.php">How Questis Works</a>
+          <ul>
+            <li>
+              <a href="talk.php">Let's Just Talk</a>
+            </li>
+            <li>
+              <a href="goals.php">Your Goals-based Plan</a>
+            </li>
+            
+            <li>
+              <a href="commitment.php">A Mutual Commitment</a>
+            </li>
+            
+            <li>
+              <a href="account.php">Account Administration</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="investment_philosophy.php">Investment Services</a>
+          <ul>
+            <li>
+              <a href="investment_philosophy.php">Investment Philosophy</a>
+            </li>
+            <li>
+              <a href="asset.php">Asset Allocation</a>
+            </li>
+              <li>
+              <a href="fund.php">Fund Selection</a>
+              </li>
+              <li>
+              <a href="rebalancing.php">Rebalancing</a>
+              </li>
+          </ul>
+        </li>
+        <li>
+          <a href="wealth_defined.php">Wealth Services</a>
+           <ul>
+            <li>
+              <a href="wealth_defined.php">Wealth Defined</a>
+             </li>
+            <li>
+              <a href="advise.php">Advice + Guidance</a>
+             </li>
+              <li>
+              <a href="life.php">Life Happens</a>
+              </li>
+              <li>
+              <a href="planning.php">Planning Capabilities</a>
+              </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#">Learn More</a>
+            <ul>
+            <li>
+              <a href="faq.php">Frequently Asked Questions</a>
+              </li>
+            <li>
+              <a href="read.php">Read It</a>
+              </li>
+              <li>
+              <a href="watch.php">Watch It</a>
+              </li>
+              <li>
+              <a href="resources.php">More Resources</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+      <div id="Qdiv">
+        <div class="fade"> <a href="myq.php"><img src="assets/q.jpg" border="0" /></a>
+          <div>
+           <a href="myq.php"> <img src="assets/q_over.jpg"  border="0"/></a>
+          </div>
+        </div>
+      </div>
+      
+    </div> 
+    
+  </div>
+</div>
+		
+<%= yield %>
+
+<div id="footer">
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="520">
+    <div class="TTWForm-container">
+      <form action="process_form.php" class="TTWForm" method="post" novalidate="">
+    <table width="520" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top"><img src="assets/signup.png" width="213" height="13" style="margin-top:20px;"></td>
+        <td width="230" valign="top"> 
+     
+     
+   
+          
+          
+          <div id="field1-container" class="field f_100">
+              
+               <input type="email" name="Email" id="field1" required="required">
+                <label for="field1">
+                   
+               </label>
+          </div>
+     
+</td>
+        <td valign="top"> <div id="form-submit" class="field f_100 clearfix submit">
+          <input type="image" src="assets/submit.png" class="submitbutton" style="width:54px; height:21px; margin-top:2px;">
+          </div></td>
+      </tr>
+    </table>
+      </form></div>
+     </td>
+    <td valign="top"><div id="footerright">Copyright 2011 Questis | <a href="mailto:info@myquestis.com">info@myquestis.com</a> | 843.367.1320 | <a href="contact.php">CONTACT US</a></div></td>
+  </tr>
+</table>
+  <div id="footer_links"><a href="index.php">WELCOME TO QUESTIS</a> |  <a href="talk.php">HOW QUESTIS WORKS</a> |  <a href="investment_philosophy.php">INVESTMENT SERVICES</a> |  <a href="wealth_defined.php">WEALTH SERVICES</a> |  <a href="myq.php">LOGIN </a><br>
+  <a href="ADV.pdf" target="_blank">FORM ADV</a> |  <a href="legal.php">LEGAL NOTICES</a> |  <a href="privacy.pdf" target="_blank">PRIVACY POLICY</a></div><br>
+</div>
+
+<map name="Map"><area>
+  <area shape="rect" coords="1,4,21,31" href="https://www.facebook.com/myquestis" target="_blank">
+  <area shape="rect" coords="24,3,41,49" href="http://twitter.com/#!/myquestis" target="_blank">
+  <area shape="rect" coords="46,3,67,42" href="http://www.linkedin.com/company/questis-advisor-partners" target="_blank">
+</map>
+
+<map name="Map2"><area shape="rect" coords="15,232,270,266" href="http://events.r20.constantcontact.com/register/event?llr=xwi78ieab&oeidk=a07e53seioxda054de4" target="_blank">
+  <area shape="rect" coords="15,85,271,121" href="NewNormalQuestis.pdf" target="_blank">
+  <area shape="rect" coords="15,122,270,155" href="deficits_debts_and_markets.pdf" target="_blank">
+  <area shape="rect" coords="15,156,270,190" href="Q3_2011.pdf" target="_blank">
+</map>
+</body>
+</html>
