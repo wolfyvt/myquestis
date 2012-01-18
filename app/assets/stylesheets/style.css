@@ -16,6 +16,14 @@ width:951px;
 overflow: hidden;
 position: relative;
 }
+
+#logopic{
+padding-left:25px;
+float:left;
+padding-right:35px;
+padding-top:12px;
+}
+
 #headertop{
 	position:relative;
 	z-index: 101;
