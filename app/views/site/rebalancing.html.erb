@@ -1,0 +1,129 @@
+<style type="text/css" media="screen">
+#slidermain{
+	height:808px; 	/*this changes the height of the image slider*/
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(<%= asset_path 'back_int.png' %>);
+	background-repeat:no-repeat;
+	z-index:9999;
+}
+.aviaslider{
+	height:776px; 	/*this changes the height of the image slider*/
+	width:951px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contentover {
+	width:875px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#FFF;
+	margin-left: 40px;
+	margin-top: 450px;
+	text-align:justify;
+}
+
+#contentover a {
+	color:#de791d;
+	text-decoration:none;
+}
+#contentover a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+#contentover_under {
+	width:430px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#FFF;
+	margin-left: 40px;
+	margin-top: 250px;
+	text-align:justify;
+}
+.titles {
+	font-family: BebasNeueRegular;
+	font-size:36px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#000;
+}
+.titles_smaller {
+	font-family: BebasNeueRegular;
+	font-size:25px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+}
+.titles_smaller_orange {
+	font-family: BebasNeueRegular;
+	font-size:25px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#de791d;
+}
+.titles_smaller_green {
+	font-family: BebasNeueRegular;
+	font-size:25px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#028da6;
+}
+#teamback{
+	background-color: #b5e2ec;
+	padding:20px;
+	color:#404647;
+	line-height:16px;
+	font-size:12px;
+	margin-left:-30px;
+	margin-top:-20px;
+	z-index:90;
+}
+#navi {
+	padding: 10px;
+}
+#navi:hover {
+	background-color: #1C8DA4;
+	padding: 10px;
+}#menu_items {
+	z-index: 100;
+	position:relative;
+}
+#next_page {
+	position: absolute;
+	z-index:10;
+	margin-left: 65px;
+	margin-top: 740px;
+	color:#028da6;
+}
+#next_page a {
+	color:#de791d;
+	text-decoration:none;
+}
+
+#next_page a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+</style>
+
+<div id="slidermain">
+<div id="slidepanels">
+          <div id="contentover">
+            <p><span class="titles_smaller_orange">Although we don't encourage investors to jump from one fund to the next,</span><span class="titles_smaller"> Questis also believes that a portfolio should not be invested and then forgotten. </span>Periodically each portfolio must be rebalanced to keep asset classes aligned with the long-term asset allocation strategy.  Rebalancing reduces risk, invests cash advantageously, and keeps your portfolio on target.  But perhaps the most important role of a disciplined rebalancing plan is the elimination of subjective and emotional decision making that can throw a portfolio far from an investor's desired level of risk.  On an ongoing basis, Questis reviews all portfolios monthly.  If a portfolio's asset-class holdings have drifted off the target allocation by a significant amount, then that portfolio is reviewed and it's determined whether or not the portfolio should be rebalanced.  Just because it's determined that the portfolio is eligible for rebalancing, it doesn't mean that we automatically rebalance.  Other considerations must be considered, such as expected cash flows, trading cost mitigation, and tax efficiency.  Often times when a meaningful cash contribution has been made to an account and/or a large cash withdrawal has been requested from an account, these events will trigger rebalancing.  Thus the importance of regular communication and portfolio reviews with our clients.<br>
+           
+            </p><p>&nbsp;</p>
+</div>
+ 
+          <div id="next_page"><strong><a href="wealth_defined.php">NEXT > Wealth Management Defined </a></strong></div>
+          
+<ul class='aviaslider' id="fullwidth-fade-slider">
+<li><img src="assets/rebalance.jpg" alt="rebalance portfolio asset allocation" /></li>
+    </ul>
+  </div>
+				
+		
+</div>
