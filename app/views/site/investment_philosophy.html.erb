@@ -1,0 +1,107 @@
+<style type="text/css" media="screen">
+
+#slidermain{
+	height:808px; 	/*this changes the height of the image slider*/
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(<%= asset_path 'back_int.png' %>);
+	background-repeat:no-repeat;
+	z-index:9999;
+}
+.aviaslider{
+	height:776px; 	/*this changes the height of the image slider*/
+	width:951px;
+	overflow: hidden;
+	position: relative;
+}
+#contentover {
+	width:875px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#000;
+	margin-left: 40px;
+	margin-top: 220px;
+	text-align:justify;
+}
+#contentover_under {
+	width:430px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#FFF;
+	margin-left: 40px;
+	margin-top: 250px;
+	text-align:justify;
+}
+.titles {
+	font-family: BebasNeueRegular;
+	font-size:36px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#000;
+}
+.titles_smaller {
+		    font-family: 'BebasNeueRegular';
+			font-size:25px;
+			text-transform:uppercase;
+			letter-spacing:1px;
+	color:#000;
+}
+#teamback{
+	background-color: #b5e2ec;
+	padding:20px;
+	color:#404647;
+	line-height:16px;
+	font-size:12px;
+	margin-left:-30px;
+	margin-top:-20px;
+	z-index:90;
+}
+#navi {
+	padding: 10px;
+}
+#navi:hover {
+	background-color: #1C8DA4;
+	padding: 10px;
+}#menu_items {
+	z-index: 100;
+	position:relative;
+}
+#next_page {
+	position: absolute;
+	z-index:10;
+	margin-left: 65px;
+	margin-top: 550px;
+	color:#de791d;
+}
+#next_page a {
+	color:#de791d;
+	text-decoration:none;
+}
+
+#next_page a:hover {
+	color:#89bfc8;
+	text-decoration:none;
+}
+</style>
+
+<div id="slidermain">
+<div id="slidepanels">
+          <div id="contentover">
+            <p><span class="titles_smaller">Can you beat the market?  Maybe, but our investment philosophy is &quot;why play the game?"</span><br>
+              Every year investors dump billions of dollars into financial advisors and investment fund managers who profess they can achieve superior returns.  Such an assertion is a big lie.  Sure mis-pricings occur, but what does that mean to most investors, nothing!  Why, because markets work and they're surprisingly efficient at setting relative prices.  Very few investors, advisors, or managers have the skills required to beat the markets, and if you could confidently identify such a person in advance, noisy returns (volatility) make it very difficult to distinguish lucky results from skillful performance.  The probability of hiring a superior active manager is very low and the expected payoff is almost certainly negative.  Questis clients do not play the Wall Street game.  Instead, we show investors how to earn their fair share of market returns by holding a select basket of asset-class, index, and exchange-traded funds that deliver market performance.  Academic research, facts, and history indicate that this is the best investment method for most people, and for a small annual fee, Questis will design, implement, and maintain a managed portfolio that economically, efficiently, and practically helps you achieve your financial goals.<br>
+           
+            </p><p>&nbsp;</p>
+</div>
+ 
+          <div id="next_page"><strong><a href="asset.php">NEXT > Asset Allocation </a></strong></div>
+          
+<ul class='aviaslider' id="fullwidth-fade-slider">
+<li><img src="assets/investment.jpg" alt="investment philosophy passive index academic" /></li>
+    </ul>
+  </div>
+				
+		
+</div>

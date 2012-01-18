@@ -1,0 +1,115 @@
+<style type="text/css" media="screen">
+
+#slidermain{
+	height:808px; 	/*this changes the height of the image slider*/
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(<%= asset_path 'back_int.png' %>);
+	background-repeat:no-repeat;
+	z-index:9999;
+}
+.aviaslider{
+	height:776px; 	/*this changes the height of the image slider*/
+	width:951px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contentover {
+	width:413px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#000;
+	margin-left: 40px;
+	margin-top: 130px;
+	
+}
+#contentover_under {
+	width:430px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#FFF;
+	margin-left: 40px;
+	margin-top: 250px;
+	text-align:justify;
+}
+.titles {
+	font-family: BebasNeueRegular;
+	font-size:36px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#de791d;
+}
+.titles_smaller {
+		    font-family: 'BebasNeueRegular';
+			font-size:22px;
+			text-transform:uppercase;
+			letter-spacing:1px;
+}
+#teamback{
+	background-color: #b5e2ec;
+	padding:20px;
+	color:#404647;
+	line-height:16px;
+	font-size:12px;
+	margin-left:-30px;
+	margin-top:-20px;
+	z-index:90;
+}
+#navi {
+	padding: 10px;
+}
+#navi:hover {
+	background-color: #1C8DA4;
+	padding: 10px;
+}#menu_items {
+	z-index: 100;
+	position:relative;
+}
+#next_page {
+	position: absolute;
+	z-index:10;
+	margin-left: 60px;
+	margin-top: 720px;
+	color:#de791d;
+}
+#next_page a {
+	color:#de791d;
+	text-decoration:none;
+}
+
+#next_page a:hover {
+	color:#89bfc8;
+	text-decoration:none;
+}
+</style>
+
+<div id="slidermain">
+<div id="slidepanels">
+          <div id="contentover">
+            <p><span class="titles" style="color:#FFF;">Where am I today?  <br>
+Where do I need to be (or want to be) tomorrow?  <br>
+And how do I get there? </span><br>
+<br>
+           
+            </p><p>&nbsp;</p>
+</div>
+  <div id="contentover_under">
+      
+Sure, knowing what to plan for is easy, but knowing what to do to achieve your plans is difficult..  That's why, the second step in our process is to give you a simple, yet custom, goals-based investment plan.  No – we're not talking about a two-inch, product pushing binder manufactured with financial planning software – that's just a book to collect dust – but instead, Questis highlights your real priorities and motivations for investing by building a multi-dimensional framework that groups your goals by similar time and importance characteristics.  Without this framework, investing is purely speculative – but with it, you are prepared to develop a strategy that includes:  identification, illustration, and quantification of risks that threaten your goal achievement; recommended trade-offs to overcome goal limitations; assignment of specific assets to specific goals; and constructed portfolio strategies that best address the risk and return requirements of each goal or set of goals.  Ideally, we hope you like the plan we give you, but the simple truth is you must decide whether Questis is the firm to develop, build, and manage your strategy.<br>
+           
+            </p><p>&nbsp;</p>
+</div>
+
+          <div id="next_page"><a href="commitment.php">NEXT > A Mutual Commitment </a></div>
+          
+<ul class='aviaslider' id="fullwidth-fade-slider">
+<li><img src="assets/goals.jpg" alt="financial plan goals" /></li>
+    </ul>
+  </div>
+				
+		
+</div>

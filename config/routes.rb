@@ -14,6 +14,12 @@ Myquestis::Application.routes.draw do
   match '/why' => 'site#why'
   match '/who' => 'site#who'
   match '/you_decide' => 'site#you_decide'
+  match '/talk' => 'site#talk'
+  match '/goals' => 'site#goals'
+  match '/commitment' => 'site#commitment'
+  match '/investment_philosophy' => 'site#investment_philosophy'
+  match '/account' => 'site#account'
+  match '/asset_allocation' => 'site#asset_allocation'
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 

@@ -1,0 +1,107 @@
+<style type="text/css" media="screen">
+
+#slidermain{
+	height:808px; 	/*this changes the height of the image slider*/
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(<%= asset_path 'back_int.png' %>);
+	background-repeat:no-repeat;
+	z-index:9999;
+}
+.aviaslider{
+	height:776px; 	/*this changes the height of the image slider*/
+	width:951px;
+	overflow: hidden;
+	position: relative;
+}
+
+#contentover {
+	width:413px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#000;
+	margin-left: 40px;
+	margin-top: 130px;
+	
+}
+#contentover_under {
+	width:430px;
+	padding: 25px;
+	z-index:9;
+	position:absolute;
+	color:#FFF;
+	margin-left: 40px;
+	margin-top: 250px;
+	text-align:justify;
+}
+.titles {
+	font-family: BebasNeueRegular;
+	font-size:36px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#de791d;
+}
+.titles_smaller {
+		    font-family: 'BebasNeueRegular';
+			font-size:22px;
+			text-transform:uppercase;
+			letter-spacing:1px;
+}
+#teamback{
+	background-color: #b5e2ec;
+	padding:20px;
+	color:#404647;
+	line-height:16px;
+	font-size:12px;
+	margin-left:-30px;
+	margin-top:-20px;
+	z-index:90;
+}
+#navi {
+	padding: 10px;
+}
+#navi:hover {
+	background-color: #1C8DA4;
+	padding: 10px;
+}#menu_items {
+	z-index: 100;
+	position:relative;
+}
+#next_page {
+	position: absolute;
+	z-index:10;
+	margin-left: 60px;
+	margin-top: 720px;
+	color:#de791d;
+}
+#next_page a {
+	color:#de791d;
+	text-decoration:none;
+}
+
+#next_page a:hover {
+	color:#89bfc8;
+	text-decoration:none;
+}
+</style>
+
+
+<div id="slidermain">
+<div id="slidepanels">
+          <div id="contentover">
+            <p><span class="titles">Whether you realize it or not, everyday you are making decisions that can have a significant impact on your overall financial well-being. </span><br>
+              In a simple, multi-step process, Questis provides you the framework to make smart ongoing financial decisions.  The <strong>first step</strong> in that process is for us to have a conversation.  Nothing formal, and in fact don't worry about how prepared or unprepared you are for the first meeting.  We like to keep it casual, really, we're not a bank, you won't catch us wearing pin stripes and ties.  The sole purpose is for us to explore a relationship – you with us and us with you.  We'll ask some questions of you and you'll ask some questions of us and after we've talked for an hour or so, hopefully we'll have the basis of your investment needs, the factors that must be considered, how often those factors should be evaluated, and what expectations you require.  At this point and if, and only if, both parties mutually agree that Questis can add significant value to your investment process, then we'll ask you for a week of time to complete, at no charge, your life goals-based investment plan.  Of course, it's up to you to accept or decline the plan.  Either way, we hope you'll take away at least a few educated opinions, good ideas, and recommendations.<br>
+           
+            </p><p>&nbsp;</p>
+          </div>
+          <div id="next_page"><%= link_to "NEXT > Your Goals-based Plan", goals_path %></div>
+          
+<ul class='aviaslider' id="fullwidth-fade-slider">
+<li><img src="assets/lets.jpg" alt="fee only financial planning lets just talk" /></li>
+    </ul>
+  </div>
+				
+		
+</div>
